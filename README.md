@@ -24,7 +24,7 @@ for the version of Ubuntu that you want to start with, then:
 
 	sudo apt install -y policykit-1 # workaround https://bugs.launchpad.net/ubuntu/+source/policykit-1/+bug/1447654/comments/4
 	sudo reboot
-
+	
 	### After reboot
         sudo apt install -y xubuntu-core^
 
