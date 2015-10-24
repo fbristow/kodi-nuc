@@ -2,6 +2,7 @@
 SHELL = /bin/bash
 INSTALL = /usr/bin/install
 USERCONF = home/dotfiles
+OWNER = -o fbristow -g fbristow
 	
 kodi:
 	apt install software-properties-common
@@ -17,11 +18,11 @@ system-config:
 	$(INSTALL) -m 644 -C system/etc/lightdm/lightdm.conf.d/10-xubuntu.conf /etc/lightdm/lightdm.conf.d/
 
 user-config:
-	$(INSTALL) -m 755 -d ~/.config/autostart/
-	$(INSTALL) -m 644 -C $(USERCONF)/config/autostart/Kodi.desktop ~/.config/autostart/
-	$(INSTALL) -m 755 -d ~/.kodi/userdata/
-	$(INSTALL) -m 644 -C $(USERCONF)/kodi/userdata/advancedsettings.xml ~/.kodi/userdata/
-	$(INSTALL) -m 644 -C $(USERCONF)/kodi/userdata/wakeonlan.xml ~/.kodi/userdata/
+	$(INSTALL) -m 755 $(OWNER) -d ~/.config/autostart/
+	$(INSTALL) -m 644 $(OWNER) -C $(USERCONF)/config/autostart/Kodi.desktop ~/.config/autostart/
+	$(INSTALL) -m 755 $(OWNER) -d ~/.kodi/userdata/
+	$(INSTALL) -m 644 $(OWNER) -C $(USERCONF)/kodi/userdata/advancedsettings.xml ~/.kodi/userdata/
+	$(INSTALL) -m 644 $(OWNER) -C $(USERCONF)/kodi/userdata/wakeonlan.xml ~/.kodi/userdata/
 
 install: kodi system-config user-config
 
