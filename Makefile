@@ -12,6 +12,7 @@ kodi:
 system-config:
 	$(INSTALL) -m 755 -C system/opt/kodi/fix-ir.sh /opt/kodi/
 	$(INSTALL) -m 644 -C system/etc/systemd/system/fix-ir.service /etc/systemd/system/
+	$(INSTALL) -m 644 -C system/etc/lightdm/lightdm.conf.d/10-xubuntu.conf /etc/lightdm/lightdm.conf.d/
 
 user-config:
 	$(INSTALL) -m 644 -C $(USERCONF)/config/autostart/Kodi.desktop ~/.config/autostart/
