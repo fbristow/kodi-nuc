@@ -1,0 +1,9 @@
+[Unit]
+Description=Fix IR receiver on Intel NUC
+
+[Service]
+ExecStart=/opt/kodi/fix-ir.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
