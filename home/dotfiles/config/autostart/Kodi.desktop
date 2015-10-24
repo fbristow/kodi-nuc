@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=Kodi
+Comment=Kodi (wait until media server is reachable, then start Kodi)
+Exec=/bin/bash -c 'until ping -c 1 pandora ; do sleep 1; done; /usr/bin/kodi'
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false
+

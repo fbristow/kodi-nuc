@@ -1,0 +1,31 @@
+<advancedsettings>
+	<videodatabase>
+		<type>mysql</type>
+		<host>pandora</host>
+		<port>3306</port>
+		<user>xbmc</user>
+		<pass>xbmc</pass>
+		<name>xbmc_video</name>
+	</videodatabase>
+
+	<musicdatabase>
+		<type>mysql</type>
+		<host>pandora</host>
+		<port>3306</port>
+		<user>xbmc</user>
+		<pass>xbmc</pass>
+		<name>xbmc_music</name>
+	</musicdatabase>
+
+	<pathsubstitution>
+		<substitute>
+			<from>special://profile/sources.xml</from>
+			<to>SMB://pandora/Software/XBMC/userdata/sources.xml</to>
+		</substitute>
+
+		<substitute>
+			<from>special://profile/RssFeeds.xml</from>
+			<to>SMB://pandora/Software/XBMC/userdata/RssFeeds.xml</to>
+		</substitute>
+	</pathsubstitution>
+</advancedsettings>
