@@ -12,13 +12,14 @@ to run the script on startup.
 Installing
 ==========
 
-I start with [Xubuntu Core](xubuntu-core), so download the [`mini.iso`](mini-iso)
+I start with [Xubuntu Core][xubuntu-core], so download the [`mini.iso`][mini-iso]
 for the version of Ubuntu that you want to start with and either
 
 1. Choose the *Xubuntu minimal installation task* during install, or
-2. Pick the smallest number of dependencies and then run
-    sudo apt-get install xubuntu-core^
-   After the installer has finished.
+2. Pick the smallest number of dependencies and then, after the installer has
+   finished, run:
+
+        sudo apt-get install xubuntu-core^
 
 I created a `Makefile` that I can use to install Kodi and the customized
 scripts and settings for my environment.
