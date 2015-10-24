@@ -16,6 +16,7 @@ system-config:
 	$(INSTALL) -m 644 -C system/etc/systemd/system/fix-ir.service /etc/systemd/system/
 	$(INSTALL) -m 755 -d /etc/lightdm/lightdm.conf.d/
 	$(INSTALL) -m 644 -C system/etc/lightdm/lightdm.conf.d/10-xubuntu.conf /etc/lightdm/lightdm.conf.d/
+	$(INSTALL) -m 644 -C system/etc/X11/xorg.conf /etc/X11/
 
 user-config:
 	$(INSTALL) -m 755 $(OWNER) -d ~/.config/autostart/
