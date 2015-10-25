@@ -21,11 +21,11 @@ for the version of Ubuntu that you want to start with, then:
 2. Choose the *Xubuntu minimal installation task* during install, or
 3. Pick the smallest number of dependencies and then, after the installer has
    finished, run:
-
-	sudo apt install -y policykit-1 # workaround https://bugs.launchpad.net/ubuntu/+source/policykit-1/+bug/1447654/comments/4
-	sudo reboot
-	
-	### After reboot
+        
+        sudo apt install -y policykit-1 # workaround https://bugs.launchpad.net/ubuntu/+source/policykit-1/+bug/1447654/comments/4
+        sudo reboot
+        
+        ### After reboot
         sudo apt install -y xubuntu-core^
 
 I created a `Makefile` that I can use to install Kodi and the customized
