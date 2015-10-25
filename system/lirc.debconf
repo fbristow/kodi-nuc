@@ -1,0 +1,5 @@
+lirc	lirc/serialport	select	/dev/ttyS0
+lirc	lirc/transmitter	select	None
+# Choices: /dev/lirc0
+lirc	lirc/dev_input_device	select	/dev/lirc0
+lirc	lirc/remote	select	Windows Media Center Transceivers/Remotes (all)
