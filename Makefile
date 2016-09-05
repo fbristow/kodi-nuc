@@ -28,7 +28,6 @@ user-config:
 	$(INSTALL) -m 644 $(OWNER) -C $(USERCONF)/config/autostart/Kodi.desktop ~/.config/autostart/
 	$(INSTALL) -m 755 $(OWNER) -d ~/.kodi/userdata/
 	$(INSTALL) -m 644 $(OWNER) -C $(USERCONF)/kodi/userdata/advancedsettings.xml ~/.kodi/userdata/
-	$(INSTALL) -m 644 $(OWNER) -C $(USERCONF)/kodi/userdata/wakeonlan.xml ~/.kodi/userdata/
 
 install: kodi lirc system-config user-config
 
